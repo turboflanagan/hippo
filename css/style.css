@@ -1,15 +1,184 @@
 /* line 1, ../compass/sass/style.scss */
 body {
   background-color: #525252;
+  background-size: cover;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  margin: 0;
+  color: #666;
 }
 
-/* line 4, ../compass/sass/style.scss */
+/* line 11, ../compass/sass/style.scss */
 .centered-form {
   margin-top: 60px;
 }
 
-/* line 8, ../compass/sass/style.scss */
+/* line 15, ../compass/sass/style.scss */
 .centered-form .panel {
   background: rgba(255, 255, 255, 0.8);
   box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+}
+
+/* line 20, ../compass/sass/style.scss */
+h1#title {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  font-size: 3.2em;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  margin: 0 auto;
+  padding-top: 180px;
+  max-width: 300px;
+  text-align: center;
+  position: relative;
+  top: 0px;
+}
+
+/* line 34, ../compass/sass/style.scss */
+h1#title span span {
+  font-weight: 400;
+}
+
+/* line 38, ../compass/sass/style.scss */
+h2 {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 1.4em;
+  line-height: 2.8em;
+}
+
+/* line 47, ../compass/sass/style.scss */
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+/* line 52, ../compass/sass/style.scss */
+a:hover {
+  color: #aeaeae;
+}
+
+/* line 56, ../compass/sass/style.scss */
+p.small {
+  font-size: 0.8em;
+  margin: 20px 0 0;
+}
+
+/* Layout */
+/* line 63, ../compass/sass/style.scss */
+.container {
+  margin: 0;
+}
+
+/* line 67, ../compass/sass/style.scss */
+.top {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, transparent 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, transparent 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, transparent 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000', endColorstr='#00000000',GradientType=0 );
+  /* IE6-9 */
+}
+
+/* line 77, ../compass/sass/style.scss */
+.login-box {
+  background-color: white;
+  max-width: 340px;
+  margin: 0 auto;
+  position: relative;
+  top: 80px;
+  padding-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 50px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+/* line 89, ../compass/sass/style.scss */
+.login-box .box-header {
+  background-color: #665851;
+  margin-top: 0;
+  border-radius: 5px 5px 0 0;
+}
+
+/* line 95, ../compass/sass/style.scss */
+.login-box label {
+  font-weight: 700;
+  font-size: .8em;
+  color: #888;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 2em;
+}
+
+/* line 104, ../compass/sass/style.scss */
+.login-box input {
+  margin-bottom: 20px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  font-size: .9em;
+  color: #888;
+}
+
+/* line 113, ../compass/sass/style.scss */
+.login-box input:focus {
+  outline: none;
+  border-color: #665851;
+  transition: 0.5s;
+  color: #665851;
+}
+
+/* line 120, ../compass/sass/style.scss */
+.login-box button {
+  margin-top: 0px;
+  border: 0;
+  border-radius: 2px;
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.7em;
+  letter-spacing: 1px;
+  background-color: #665851;
+  cursor: pointer;
+  outline: none;
+}
+
+/* line 135, ../compass/sass/style.scss */
+.login-box button:hover {
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+/* line 140, ../compass/sass/style.scss */
+.login-box button:hover {
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+/* line 145, ../compass/sass/style.scss */
+.selected {
+  color: #665851 !important;
+  transition: 0.5s;
+}
+
+/* Animation Delay */
+/* line 151, ../compass/sass/style.scss */
+#logo {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+}
+
+/* line 156, ../compass/sass/style.scss */
+.login-box {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1s;
 }
