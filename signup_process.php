@@ -1,15 +1,18 @@
 <?php
 
-$username = $_POST['username'];
+session_start();
+require_once('inc/meekrodb.2.3.class.php');
+
+$username = $_POST['email'];
 $password = $_POST['password'];
 
 $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
 	try{
-		DB::insert('users', array(
-			'uid' => '',
+		DB::insert('users',array(
+			'id' => '',
 			'name' => $username,
-			'password' => $hashed_password,
+			'pass' => $hashed_password,
 			'status' => 1
 		));
 	}catch(MeekroDBException $e){
@@ -18,8 +21,7 @@ $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 	}
 
 	$_SESSION['username'] = $username;
-	$_SESSION['uid'] = DB::insertId();  // This meekroDB method will get the last uid added to the DB.
+	$_SESSION['uid'] = DB::insertId();
 	header('Location: /?callback=registration');
-
 
 ?>

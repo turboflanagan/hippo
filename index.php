@@ -4,9 +4,9 @@
 
 	$results = DB::query("SELECT * FROM users");
 	foreach($results as $result){
-		print "<pre>";
-		print_r($result);
-		print "</pre>";
+		// print "<pre>";
+		// print_r($result);
+		// print "</pre>";
 
 	}
 
@@ -30,7 +30,7 @@
 
 		<div class="container">
 			<div class="row centered-form">
-				<div class="col-xs-10 col-sm-8 col-md-6 col-xs-offset-1 col-sm-offset-2 col-md-offset-2">
+				<div class="col-xs-10 col-sm-8 col-md-6 col-xs-offset-1 col-sm-offset-2 col-md-offset-3">
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">Save the Christmas Hippopotomussesss... <small>We need you!!</small></h3>
@@ -79,10 +79,10 @@
 
 	<div class="container">
 		<div class="row centered-form">
-			<div class="col-xs-10 col-sm-8 col-md-6 col-xs-offset-1 col-sm-offset-2 col-md-offset-2">
+			<div class="col-xs-10 col-sm-8 col-md-6 col-xs-offset-1 col-sm-offset-2 col-md-offset-3">
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						<h2>Log In</h2>
+						<h3 id="login-header" class="panel-title">Login</h3>
 					</div>
 					<div class="panel-body">
 						<form role="form" method="post" action="register.php">
